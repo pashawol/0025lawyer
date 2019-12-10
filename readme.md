@@ -1,9 +1,9 @@
 Сборка на основе pug. scss, Bootstrap 4.3.3
 
 
-<a href='https://elvizlir.github.io/0025lawyer/public/index.html'>Главная</a>
-<a href='https://elvizlir.github.io/0025lawyer/public/02-residence.html'>Вид на жительство</a>
-<a href='https://elvizlir.github.io/0025lawyer/public/03-about.html'>О нас</a>
+<a href='https://elvizlir.github.io/0025lawyer/public/index.html'>Главная</a><br>
+<a href='https://elvizlir.github.io/0025lawyer/public/02-residence.html'>Вид на жительство</a><br>
+<a href='https://elvizlir.github.io/0025lawyer/public/03-about.html'>О нас</a><br>
 
 4.3.3.2
 1. Перенес библиотеки в node_modules.  С помощью плагина они переносятся в libs c удалением лишнего
