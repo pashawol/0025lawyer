@@ -88,10 +88,10 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
-			&:hover{
-				&::after{
-					transform: rotate(90deg);
-				}
+		}
+		&:hover{
+			a::after{
+				transform: rotate(90deg);
 			}
 		}
 		&:hover .submenu,
