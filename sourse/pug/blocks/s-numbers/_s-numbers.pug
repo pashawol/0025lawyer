@@ -1,0 +1,22 @@
+mixin s-numbers()
+	// start s-numbers
+	+b.SECTION.s-numbers.section#s-numbers&attributes(attributes)
+		.side-wrapper
+			.container
+				h2 Главные цифры о&nbsp;нашей компании
+				+e.row.row
+					mixin numbers-item(t, s)
+						+e.col.col-xl-3.col-sm-6
+							+e.item&attributes(attributes)
+								block
+								+e.item-title=t
+								+e.item-text=s
+					+numbers-item('компаний', 'Более 1300 зарегистрированных компаний')(class='s-numbers__item--top')
+						+e.item-number--dark 1300
+					+numbers-item('партнеров', 'В более чем 100 юрисдикциях мы имеем партнёров')
+						+e.item-number 100
+					+numbers-item('обращений', ' Более чем 30% клиентов обращаются повторно')
+						+e.item-number 30%
+					+numbers-item('банковских счетов', `Более 1500 открытых банковских счетов`)(class='s-numbers__item--top')
+						+e.item-number 1500
+	// end s-numbers

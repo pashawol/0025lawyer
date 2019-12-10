@@ -1,0 +1,16 @@
+mixin s-info()
+	// start s-info
+	+b.s-info.section#s-info&attributes(attributes)
+		.container
+			+e.block.bg-wrap
+				img.bg-img(src='img/@2x/info-bg.jpg' alt='')
+				+e.text-wrap
+					p
+						strong Более детальную информацию 
+						| вы&nbsp;можете получить на нашем сайте в&nbsp;разделе “Услуги”
+					p или связавшись с нашими специалистами по телефону
+					a(href='tel:+37120340720') +37120340720
+					p или электронной почте 
+						a(href='mailto:info@utrust.lv') info@utrust.lv 
+						|, и&nbsp;мы с удовольствием ответят на все интересующие вами вопросы.
+	// end s-info

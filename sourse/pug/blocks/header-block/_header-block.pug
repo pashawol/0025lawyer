@@ -1,0 +1,57 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		.container
+			+e.slider--js
+				mixin header-slide()
+					.slider-slide
+						+e.slider-block
+							block
+							+e.text
+								span От регистрации до сопровождения компании, 
+								| а также подбора персонала, чтобы вы занимались развитием, а не бумагами
+							+e.btn-wrap
+								+e.A.btn.btn.btn-primary(href='') получить консультацию
+								+e.add Первая консультация
+									span бесплатно
+				+header-slide()
+					+e.H1.title
+						span Комплексное
+						| юридическое и бухгалтерское сопровождение вашего бизнеса
+				+header-slide()
+					+e.title
+						span Слайд 2
+						| юридическое и бухгалтерское сопровождение вашего бизнеса
+				+header-slide()
+					+e.title
+						span Слайд 3
+						| юридическое и бухгалтерское сопровождение вашего бизнеса
+				+header-slide()
+					+e.title
+						span Слайд 4
+						| юридическое и бухгалтерское сопровождение вашего бизнеса
+	// end header-block
+
+mixin header-block-2(i)
+	// start header-block
+	+b.header-block.bg-wrap#header-block&attributes(attributes)
+		img.bg-img(src=`img/@2x/${i}.jpg` alt='')
+		.container
+			+e.slider-block
+				+e.H1.title Вид на жительство в Латвии
+				+e.text Компания “Utrust” обеспечит полную конфиденциальность, информативность, комфортный сервис и профессионализм по многим вопросам
+				+e.btn-wrap
+					+e.A.btn.btn.btn-primary(href='') получить консультацию
+	// end header-block
+
+mixin header-block-3(i)
+	// start header-block
+	+b.header-block.bg-wrap#header-block&attributes(attributes)
+		img.bg-img(src=`img/@2x/${i}.jpg` alt='')
+		.container
+			+e.slider-block
+				+e.H1.title О компании
+				+e.text От регистрации до сопровождения компании, а&nbsp;также подбора персонала, чтобы вы занимались&nbsp;развитием, а не бумагами
+				+e.btn-wrap
+					+e.A.btn.btn.btn-primary(href='') получить консультацию
+	// end header-block

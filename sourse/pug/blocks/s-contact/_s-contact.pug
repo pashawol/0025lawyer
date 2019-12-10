@@ -1,0 +1,29 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
+		+e.bg-wrapper
+			+e.video
+				img(src='img/@2x/contact-video.jpg' alt='')
+			+e.layer
+				img(src='img/@2x/contact-layer.png' alt='')
+		.side-wrapper
+			.container
+				+e.row.row
+					+e.logo-col.col-lg-auto
+						+e.A.logo-block(href='/')
+							+e.logo-border
+							img.res-i(src='img/@2x/logo-menu.png' alt='')
+					+e.map-col.col-md
+						+e.map-wrap
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A650fe85f4db1ddd5d33c1ba995cc5b9bc05c4015a7c4950bb53e9174b6217f5f&amp;source=constructor" width="711" height="360"></iframe>
+					+e.contact-col.col-md-auto
+						+e.ask-block
+							+icon('mail')
+							+e.ask Напишите вопрос юристу:
+							+e.A.link(href='mailto:info@utrust.lv') info@utrust.lv
+						+e.ask-block
+							+icon('phone')
+							+e.ask Задайте вопрос юристу:
+							+e.A.link(href='tel:+37120340720') + 371 2034 0720
+						+e.btn.btn.btn-primary(href='#') Перезвонить вам?
+	// end s-contact

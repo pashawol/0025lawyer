@@ -1,0 +1,187 @@
+
+// start .s-services
+.s-services {
+	@include media-breakpoint-up(md){
+		padding: rem(70) 0 rem(95);
+	}
+		
+	.side-wrapper{
+		max-width: rem(1455);
+		&::before{
+			@include media-breakpoint-up(md){
+				z-index: 3;
+				content: 'услуги нашей компании';
+				@include a-cent(y);
+				right: rem(-145);
+				transform-origin: center center;
+				transform: rotate(-90deg);
+				line-height: 1;
+				color: #7f7f7f;
+				text-transform: uppercase;
+				letter-spacing: 0.53px;
+				font-size: rem(23);
+			}
+		}
+	}
+
+	h2{
+		margin-bottom: rem(40);
+		@include media-breakpoint-up(md){
+			margin-bottom: rem(65);
+		}
+		text-align: center;
+		font-family: $font-family-monospace;
+		letter-spacing: 1.9px;
+	}
+
+	&__block{
+		@include media-breakpoint-up(md){
+			min-height: rem(473);
+		}
+		padding: rem(30) rem(40);
+		@include media-breakpoint-up(lg){
+			padding: rem(57) rem(10) rem(65) rem(83);
+		}
+		border-radius: 10px;
+		background-color: #f9f9f9;
+		&:not(:last-child){
+			margin-bottom: rem(30);
+			@include media-breakpoint-up(md){
+				margin-bottom: rem(64);
+			}
+		}
+		.bg-img{
+			@include media-breakpoint-down(md){
+				object-position: right;
+			}
+			border-radius: rem(10);
+			overflow: hidden;
+		}
+		.abs-img{
+			display: none;
+			@include media-breakpoint-up(lg){
+				display: block;
+				@include a-cent(y);
+				right: rem(-44);
+				max-height: 100%;
+			}
+		}
+		&--bottom{
+			border: 1px solid #f8f8f8;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+	}
+
+	&__block-title{
+		margin-bottom: rem(30);
+		@include media-breakpoint-up(md){
+			margin-bottom: rem(41);
+		}
+		color: #6a6a6a;
+		font-style: italic;
+		@include rfs(60);
+		line-height: 1.2;
+		letter-spacing: 0.48px;
+		font-family: $font-family-monospace;
+		&--bg{
+			@include rfs(56);
+			@include media-breakpoint-up(sm){
+				@include rfs(66);
+			}
+		}
+	}
+
+	&__text-wrap{
+		max-width: rem(650);
+		&--right{
+			margin-left: auto;
+		}
+	}
+
+	&__row{
+		@include roww(25);
+	}
+
+	&__col{
+		&:not(:last-child){
+			@include media-breakpoint-down(sm){
+				margin-bottom: rem(20);
+			}
+		}
+	}
+
+	&__list{
+		margin-bottom: 0;
+		list-style: none;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__list-item{
+		&:not(:last-child){
+			margin-bottom: rem(20);
+			@include media-breakpoint-up(md){
+				margin-bottom: rem(35);
+			}
+		}
+		&:last-child{
+			margin-top: auto;
+		}
+		padding-left: rem(20);
+		@include media-breakpoint-up(sm){
+			padding-left: rem(33);
+		}
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			top: rem(6);
+			left: 0;
+			width: rem(13);
+			height: rem(13);
+			background-color: #e8e8e8;
+			background-image: linear-gradient(-40deg, #d0d0d0 0%, #ffffff 100%);
+			border-radius: 50%;
+		}
+		a{
+			display: inline;
+			color: #2e2c33;
+			font-size: rem(21);
+			letter-spacing: 0.63px;
+			line-height: 1.17;
+			border-bottom: 1px solid transparent;
+			&:hover{
+				color: #2e2c33;
+				border-bottom: 1px solid #2e2c33;
+				text-decoration: none;
+			}
+		}
+	}
+
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(xs) {}
+
+//
+@include media-breakpoint-between(md, xl) { }
+
+
+//
+@include media-breakpoint-only(xs) {}
+@include media-breakpoint-only(sm) {}
+@include media-breakpoint-only(md) {}
+@include media-breakpoint-only(lg) {}
+@include media-breakpoint-only(xl) {}
+
+//
+@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {} 
+
+} // end.s-services

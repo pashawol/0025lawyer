@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-description/_s-description.pug
+include ../blocks/s-residence-adv/_s-residence-adv.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-foreigner/_s-foreigner.pug
+include ../blocks/s-grounds/_s-grounds.pug
+include ../blocks/s-docs/_s-docs.pug
+include ../blocks/s-partners/_s-partners.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Вид на жительство в Латвии'
+	title= title
+block pagecontent 
+	+mob-mnu()
+	+header()
+		+top-nav()
+		+header-block-2('residence-header-bg')(class='residence-header')
+	+s-description()
+	+s-residence-adv()
+	+s-foreigner()
+	+s-grounds()
+	+s-docs()
+	+s-advantages()
+	//- +s-partners()
+	//- +s-contact()
+	+footer()

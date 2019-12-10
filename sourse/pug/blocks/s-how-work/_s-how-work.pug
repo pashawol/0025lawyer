@@ -1,0 +1,36 @@
+mixin s-how-work()
+	// start s-how-work
+	+b.SECTION.s-how-work.section#s-how-work&attributes(attributes)
+		.side-wrapper
+			.container
+				h2 Как мы работаем
+				+e.subtitle Вам не нужно никуда ходить - все&nbsp;вопросы и действия мы берем на себя
+				+e.row.row
+					mixin how-i(i)
+						+e.col.col-lg-6&attributes(attributes)
+							+e.item
+								+e.item-row.row
+									+e.icon-col.col-md
+										+e.icon-wrap
+											+icon(`how-i${i}`)
+									.col-md
+										block
+					+how-i('1')
+						+e.item-title Вы оставляете заявку на&nbsp;нашем сайте
+						+e.item-subtitle Вы оставляете заявку на&nbsp;нашем сайте и мы в самое ближайшее время с Вами связываемся.
+					+how-i('2')(class='s-how-work__col--top')
+						+e.item-title Мы анализируем поставленные задачи
+						+e.item-subtitle Вы оставляете заявку на&nbsp;нашем сайте и мы в самое ближайшее время с Вами связываемся.
+					+how-i('3')
+						+e.item-title Если вас все устраивает, выставляем счет
+						+e.item-subtitle Вы оставляете заявку на&nbsp;нашем сайте и мы в самое ближайшее время с Вами связываемся.
+					+how-i('4')(class='s-how-work__col--top')
+						+e.item-title После 100% предоплаты, выполняем посталенные задачи
+						+e.item-subtitle Вы оставляете заявку на&nbsp;нашем сайте и мы в самое ближайшее время с Вами связываемся.
+					+how-i('5')
+						+e.item-title Доводим дело до результата
+						+e.item-subtitle Вы оставляете заявку на&nbsp;нашем сайте и мы в самое ближайшее время с Вами связываемся.
+					+how-i('6')(class='s-how-work__col--top')
+						+e.item-title Не довели до резльтата? Вернем деньги
+						+e.item-subtitle Вы оставляете заявку на&nbsp;нашем сайте и мы в самое ближайшее время с Вами связываемся.
+	// end s-how-work

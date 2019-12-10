@@ -1,0 +1,218 @@
+
+// start .s-advantages
+.s-advantages {
+	@include media-breakpoint-up(md){
+		padding: rem(50) 0 rem(90);
+	}
+
+	.bg-img{
+		object-position: left;
+	}
+
+	.side-wrapper{
+		max-width: rem(1485);
+		&::before{
+			@include media-breakpoint-up(md){
+				z-index: 3;
+				content: 'ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ';
+				@include a-cent(y);
+				left: rem(-175);
+				transform-origin: center center;
+				transform: rotate(-90deg);
+				line-height: 1;
+				color: #ffffff;
+				text-transform: uppercase;
+				letter-spacing: 0.53px;
+				font-size: rem(23);
+			}
+		}
+	}
+
+	&__title-wrap{
+		@include media-breakpoint-up(md){
+			padding-left: rem(150);
+		}
+		@include media-breakpoint-up(lg){
+			padding-left: rem(261);
+		}
+		margin-bottom: rem(65);
+		max-width: rem(837);
+		position: relative;
+		&::before{
+			position: absolute;
+			top: 0;
+			@include rfs(200);
+			@include media-breakpoint-up(md){
+				@include rfs(386);
+				@include a-cent(y);
+			}
+			color: #ffffff;
+			content: '6';
+			// position: absolute;
+			left: 0;
+			line-height: 1;
+			font-family: $font-family-monospace;
+			// bottom: rem(-45);
+		}
+	}
+
+	h2{
+		@include media-breakpoint-down(sm){
+			padding-left: rem(80);
+		}
+		@include media-breakpoint-down(xs){
+			padding-left: rem(50);
+		}
+		font-family: $font-family-monospace;
+		color: #ffffff;
+		line-height: 1.03;
+		letter-spacing: 0.55px;
+		margin-bottom: rem(33);
+	}
+
+	&__subtitle{
+		padding-left: rem(15);
+		color: #ffffff;
+		font-size: rem(18);
+		line-height: 1.46;
+		letter-spacing: 0.72px;
+		span{
+			font-weight: 500;
+		}
+	}
+
+	&__row{
+		padding-left: rem(5);
+		@include media-breakpoint-up(md){
+			margin-left: rem(10);
+			max-width: rem(695);
+		}
+		@include roww(26);
+	}
+
+	&__col{
+		margin-bottom: rem(26);
+	}
+	
+	&__item{
+		position: relative;
+		height: 100%;
+		padding: rem(25) rem(30) rem(23) rem(40);
+		border-radius: 10px;
+		border: 1px solid #e8e8e8;
+		background-color: #ffffff;
+		&:hover{
+			z-index: 10;
+		}
+	}
+
+	&__item-title{
+		color: #2e2c33;
+		font-size: rem(21);
+		line-height: 1.29;
+		letter-spacing: 0.53px;
+		span{
+			@include media-breakpoint-up(md){
+				display: block;
+			}
+		}
+	}
+
+	&__item-add{
+		&::after{
+			@include mt;
+			left: rem(-19);
+			@include a-cent(y);
+			width: rem(39);
+			height: rem(39);
+			border-radius: 50%;
+			border: 1px solid #e8e8e8;
+			background-color: #e8e8e8;
+			background-image: linear-gradient(-40deg, #d0d0d0 0%, #ffffff 100%);
+			content: '+';
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #696969;
+			font-size: rem(22);
+			text-shadow: 0 2px 0 rgba(255, 255, 255, 0.54);
+			line-height: 1.12;
+			letter-spacing: 0.66px;
+		}
+		&:hover{
+			&::after{
+				z-index: 20;
+				box-shadow: 0 6px 13px rgba(240, 209, 164, 0.26), 0 0 117px rgba(255, 246, 234, 0.21), inset 0 0 7px rgba(255, 232, 201, 0.36);
+				background-color: #e8e8e8;
+				background-image: linear-gradient(to bottom, #ffe8c9 0%, #e6c28d 100%);
+			}
+			.s-advantages__add-block{
+				opacity: 1;
+				z-index: 1;
+			}
+		}
+	}
+
+	&__add-block{
+		pointer-events: none;
+		opacity: 0;
+		@include mt;
+		width: rem(284);
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: rem(-30);
+		box-shadow: 0 0 46px rgba(136, 136, 149, 0.26);
+		background-color: #ffffff;
+		padding: rem(40) rem(30);
+		border-radius: 10px;
+		&::after{
+			content: '';
+			@include a-cent;
+			width: calc(100% - 6px);
+			height: calc(100% - 5px);
+			border-radius: 10px;
+			border: 1px dashed #e8e8e8;
+		}
+	}
+
+	&__add-title{
+		margin-bottom: rem(25);
+		font-size: rem(20);
+		line-height: 1.35;
+		letter-spacing: 0.51px;
+		color: #2e2c33;
+	}
+
+	&__add-text{
+		color: #7b7b7b;
+		letter-spacing: 0.51px;
+		font-size: rem(18);
+		line-height: 1.49;
+	}
+		
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(xs) {}
+
+//
+@include media-breakpoint-between(md, xl) { }
+
+
+//
+@include media-breakpoint-only(xs) {}
+@include media-breakpoint-only(sm) {}
+@include media-breakpoint-only(md) {}
+@include media-breakpoint-only(lg) {}
+@include media-breakpoint-only(xl) {}
+
+//
+@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {} 
+
+} // end.s-advantages

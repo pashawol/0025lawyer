@@ -1,0 +1,48 @@
+mixin s-services()
+	// start s-services
+	+b.SECTION.s-services.section#s-services&attributes(attributes)
+		.side-wrapper
+			.container
+				h2 Наши услуги
+				+e.block.bg-wrap
+					img.bg-img(src='img/@2x/services-bg1.jpg' alt='')
+					img.abs-img(src='img/@2x/services-img.png' alt='')
+					+e.text-wrap
+						+e.block-title Юридические
+						+e.row.row
+							+e.col.col-md-6
+								+e.UL.list
+									+e.LI.list-item
+										a(href='#') открытие Латвийских и&nbsp;иностранных компаний
+									+e.LI.list-item
+										a(href='#') оформление ВНЖ в&nbsp;Латвии;
+									+e.LI.list-item
+										a(href='#') получение лицензии ICO и Gambling;
+							+e.col.col-md-6
+								+e.UL.list
+									+e.LI.list-item
+										a(href='#') открытие банковских счетов в местных и&nbsp;иностранных банках;
+									+e.LI.list-item
+										a(href='#') юридическое сопровождение компании.
+				+e.block--bottom.bg-wrap
+					img.bg-img(src='img/@2x/services-bg2.jpg' alt='')
+					+e.text-wrap--right
+						+e.block-title--bg Бухгалтерские
+						+e.row.row
+							+e.col.col-md-6
+								+e.UL.list
+									+e.LI.list-item
+										a(href='#') Банковские счета
+									+e.LI.list-item
+										a(href='#') Банковские счета
+									+e.LI.list-item
+										a(href='#') Банковские счета
+							+e.col.col-md-6
+								+e.UL.list
+									+e.LI.list-item
+										a(href='#') Банковские счета
+									+e.LI.list-item
+										a(href='#') Банковские счета
+									+e.LI.list-item
+										a(href='#') Банковские счета
+	// end s-services

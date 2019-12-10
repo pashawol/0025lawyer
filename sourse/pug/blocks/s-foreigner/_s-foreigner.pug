@@ -1,0 +1,20 @@
+mixin s-foreigner()
+	// start s-foreigner
+	+b.SECTION.s-foreigner.section#s-foreigner&attributes(attributes)
+		.container
+			+e.title
+				h2 +Иностранец так же может рассчитывать на:
+			+e.row-wrap
+				+e.row.row
+					+e.img-col.col-lg
+						+e.img-wrap.bg-wrap
+							img.bg-img(src='img/@2x/foreigner-img.jpg' alt='#')
+					.col-lg
+						+e.UL.list
+							+e.LI.list-item Детское пособие
+							+e.LI.list-item Страхование здоровья
+							+e.LI.list-item Пособие по инвалидности или больничный
+						p Важно отметить, что временный ВНЖ включает в себя ограниченные социальные гарантии и не позволяет на 100% воспользоваться льготами на медицинские услуги.
+						p Что касается ПМЖ (постоянный вид на жительство), то тут можно говорить о больших возможностях на территории Латвии.
+						p Документ выдается тем, кто уже прожил в стране более пяти лет и желает остаться на постоянное проживание
+	// end s-foreigner

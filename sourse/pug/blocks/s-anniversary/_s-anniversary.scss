@@ -1,0 +1,138 @@
+
+// start .s-anniversary
+.s-anniversary {
+
+	@include media-breakpoint-up(md){
+		padding: rem(82) 0 0;
+	}
+
+	h2{
+		font-family: $font-family-monospace;
+		@include rfs(58);
+		color: #2e2c33;
+		line-height: 1.11;
+		letter-spacing: 2px;
+		text-align: center;
+		max-width: rem(790);
+		margin: 0 auto rem(90);
+	}
+
+	&__main-row{
+		@include roww(27);
+	}
+
+	&__items-col{
+		position: relative;
+		&::after{
+			@include media-breakpoint-up(xl){
+				content: '';
+				width: rem(247);
+				height: rem(64);
+				background-image: url(../img/@2x/anniv-line.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: absolute;
+				bottom: rem(72);
+				right: 0;
+				transform: translateX(30%);
+			}
+		}
+	}
+
+	&__items-row{
+		counter-reset: section;
+		@include roww(12);
+	}
+
+	&__item-col{
+		margin-bottom: rem(50);
+		@include media-breakpoint-up(lg){
+			margin-bottom: rem(40);
+		}
+		@include media-breakpoint-up(xl){
+			margin-bottom: rem(72);
+		}
+	}
+
+	&__item-wrapper{
+		height: 100%;
+		z-index: 2;
+		position: relative;
+		&:before{
+			counter-increment: section;
+			content: "0" counter(section);
+			z-index: -1;
+			position: absolute;
+			top: rem(-40);
+			@include media-breakpoint-up(sm){
+				top: rem(-58);
+			}
+			@include media-breakpoint-up(lg){
+				top: rem(-70);
+			}
+			left: 0;
+			opacity: 0.14;
+			font-family: $font-family-monospace;
+			@include rfs(113);
+			line-height: 0.8;
+			letter-spacing: 3.63px;
+		}
+	}
+	
+	&__item{
+		height: 100%;
+		border-radius: rem(10);
+		border: 1px solid #e8e8e8;
+		background-color: #ffffff;
+		min-height: rem(182);
+		padding: rem(20) rem(20);
+		text-align: center;
+		align-items: center;
+		display: flex;
+	}
+
+	&__item-text{
+		color: #2e2c33;
+		font-size: rem(18);
+		line-height: 1.3;
+		letter-spacing: 0.57px;
+	}
+
+	&__text-col{
+		@include media-breakpoint-up(xl){
+			max-width: rem(540);
+		}
+		p{
+			margin-bottom: rem(15);
+			color: #2e2c33;
+			font-size: rem(20);
+			line-height: 1.49;
+			letter-spacing: 0.8px;
+		}
+	}
+		
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(xs) {}
+
+//
+@include media-breakpoint-between(md, xl) { }
+
+
+//
+@include media-breakpoint-only(xs) {}
+@include media-breakpoint-only(sm) {}
+@include media-breakpoint-only(md) {}
+@include media-breakpoint-only(lg) {}
+@include media-breakpoint-only(xl) {}
+
+//
+@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {} 
+
+} // end.s-anniversary

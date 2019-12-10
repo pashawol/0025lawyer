@@ -1,0 +1,39 @@
+mixin s-advantages()
+	// start s-advantages
+	+b.SECTION.s-advantages.bg-wrap.section#s-advantages&attributes(attributes)
+		img.bg-img(src='img/@2x/advantages-bg.jpg' alt='#')
+		.side-wrapper
+			.container
+				+e.title-wrap
+					h2 преимуществ работы с нами
+					+e.subtitle 
+						span Выбрав нас, 
+						| вы будете удивлены, сколько бумажной работы можно передать профессионалам, а освободившиеся время использовать на решение более важных бизнес вопросов.
+				+e.row.row
+					mixin advantages-i()
+						+e.col.col-md-6
+							+e.item
+								+e.item-add
+									+e.add-block
+										+e.add-title Конфиденциальность клиентов
+										+e.add-text Мы заранее определяем вероятность положительного результата, и если сомневаемся, говорит об этом сразу.
+								block
+					+advantages-i()
+						+e.item-title Конфиденциальность 
+							span наших клиентов
+					+advantages-i()
+						+e.item-title Комфортный 
+							span сервис
+					+advantages-i()
+						+e.item-title Прогноз 
+							span результата
+					+advantages-i()
+						+e.item-title Освобождение 
+							span времени
+					+advantages-i()
+						+e.item-title Информативность 
+							span наших клиентов
+					+advantages-i()
+						+e.item-title Профессионализм 
+							span команды
+	// end s-advantages

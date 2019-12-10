@@ -1,0 +1,38 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-numbers/_s-numbers.pug
+include ../blocks/s-values/_s-values.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-services/_s-services.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-how-work/_s-how-work.pug
+include ../blocks/s-partners/_s-partners.pug
+
+block variables
+	- let  mainPage= 'main-page'
+block title
+	- let  title= 'Главная'
+	title= title
+block pagecontent 
+	+mob-mnu()
+	+header()
+		+e.video-wrap
+			+e.video
+				img(src='img/@2x/header-video.jpg' alt='#')
+			+e.video-bg
+		.side-wrapper
+			.header-block__slider-dots
+			+top-nav()
+			+header-block()
+	+s-numbers()
+	+s-values()
+	+s-advantages()
+	+s-services()
+	+s-about()
+	+s-how-work()
+	+s-partners()
+	+s-contact()
+	+footer()

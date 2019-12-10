@@ -1,0 +1,30 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-anniversary/_s-anniversary.pug
+include ../blocks/s-info/_s-info.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-mission/_s-mission.pug
+include ../blocks/s-grounds/_s-grounds.pug
+include ../blocks/s-docs/_s-docs.pug
+include ../blocks/s-partners/_s-partners.pug
+include ../blocks/s-values-about/_s-values-about.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'О компании'
+	title= title
+block pagecontent 
+	+mob-mnu()
+	+header()
+		+top-nav()
+		+header-block-3('about-header-bg')(class='about-header')
+	+s-anniversary()
+	+s-info()
+	+s-mission()
+	+s-values-about()
+	+s-advantages()
+	+footer()
