@@ -5,20 +5,21 @@ mixin s-partners()
 			.container
 				h2 С нами работают
 				+e.slider--js
-					mixin partners-slide
-						.slick-slide
-							+e.row.row
-								mixin partner-i(i)
-									+e.col.col-md-4.col-sm-6
-										+e.A.item(href='#')
-											img.res-i(src=`img/@2x/partner${i}.png` alt='')
-								+partner-i('1')
-								+partner-i('2')
-								+partner-i('3')
-								+partner-i('4')
-								+partner-i('5')
-								+partner-i('6')
-					+partners-slide()
-					+partners-slide()
+					mixin partner-i(i)
+						+e.wpap
+							+e.A.item(href='#')
+								img.res-i(src=`img/@2x/partner${i}.png` alt='')
+					+partner-i('1')
+					+partner-i('2')
+					+partner-i('3')
+					+partner-i('4')
+					+partner-i('5')
+					+partner-i('6')
+					+partner-i('1')
+					+partner-i('2')
+					+partner-i('3')
+					+partner-i('4')
+					+partner-i('5')
+					+partner-i('6')
 				+e.slider-dots
 	// end s-partners

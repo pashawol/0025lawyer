@@ -19,7 +19,7 @@
 		font-family: $font-family-monospace;
 		@include rfs(60);
 		line-height: 1.2;
-		letter-spacing: 1.8px;
+		letter-spacing: rem(1.8);
 		position: relative;
 		&::after{
 			@include media-breakpoint-up(lg){
@@ -76,12 +76,12 @@
 		overflow: hidden;
 	}
 
-	&__list{
+	ul{
 		list-style: none;
 		margin-bottom: rem(30);
 	}
 
-	&__list-item{
+	li{
 		@include media-breakpoint-down(md){
 			padding-left: rem(30);
 		}
@@ -97,7 +97,7 @@
 		}
 		color: #2e2c33;
 		line-height: 1.31;
-		letter-spacing: 0.62px;
+		letter-spacing: rem(0.62);
 		position: relative;
 		font-weight: 500;
 		&::after{
@@ -121,7 +121,7 @@
 		color: #2e2c33;
 		font-size: rem(19);
 		line-height: 1.32;
-		letter-spacing: 0.54px;
+		letter-spacing: rem(0.54);
 		&:not(:last-child){
 			margin-bottom: rem(25);
 		}

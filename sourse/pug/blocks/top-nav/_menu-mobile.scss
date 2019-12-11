@@ -80,18 +80,19 @@ $h: rem(3);
 .menu-mobile {
 	position: fixed !important;
 	z-index: 999;
-	max-height: 85%;
-	// overflow: hidden;
+	max-height: 100vh;
+	overflow-y: auto;
 	width: 100vw;
 	top: 0;
 	left: 0;
-	transform: translate(0, -120%);
+	transform: translate(0, -150%);
 	@include mt(.6);
 	will-change: transform;
 
 	&__inner {
 		background-color: #f7f7f7;
 		overflow-y: auto;
+		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 		height: 100%;
 	}
@@ -144,9 +145,13 @@ $h: rem(3);
 			// font-size: 16px;
 
 			// padding: 10px;
+			box-shadow:  inset 0 -0.2em 0 0 transparent;
 			display: block;
 			&:hover{
 				text-decoration: none;
+				@include media-breakpoint-up(md){
+					box-shadow:  inset 0 -0.2em 0 0 #f9d749;
+				}
 			}
 		}
 		&.menu-item.menu-item-has-children{
@@ -168,7 +173,7 @@ $h: rem(3);
 			left: rem(10);
 			text-transform: uppercase;
 			color: #ffffff;
-			letter-spacing: 3.03px;
+			letter-spacing: rem(3.03);
 			line-height: .9;
 			font-size: rem(121);
 			opacity: 0.96;
@@ -256,7 +261,7 @@ $h: rem(3);
 		color: #3b3b3b;
 		line-height: 1.33;
 		text-transform: uppercase;
-		letter-spacing: 1.15px;
+		letter-spacing: rem(1.15);
 		font-family: $font-family-monospace;
 	}
 
@@ -267,7 +272,7 @@ $h: rem(3);
 		font-size: rem(18);
 		color: #3b3b3b;
 		line-height: 1.11;
-		letter-spacing: 1.38px;
+		letter-spacing: rem(1.38);
 		font-weight: 500;
 		span{
 			color: #a4a4a4;
@@ -289,14 +294,14 @@ $h: rem(3);
 		font-weight: 500;
 		font-size: rem(20);
 		line-height: 1.14;
-		letter-spacing: 0.73px;
+		letter-spacing: rem(0.73);
 		margin-bottom: rem(10);
 	}
 	&__ask-link{
 		color: #2e2c33;
 		font-size: rem(24);
 		line-height: 0.95;
-		letter-spacing: 0.88px;
+		letter-spacing: rem(0.88);
 		&:hover{
 			color: #2e2c33;
 			text-decoration: none;

@@ -9,7 +9,8 @@ mixin s-residence-adv()
 					+e.col.col-xl.col-md-4.col-sm-6
 						+e.item
 							+e.icon-wrap
-								+icon(`res-i${i}`)
+								//- +icon(`res-i${i}`)
+								+e.IMG.icon(class=`s-residence-adv__icon--${i}` src=`img/svg/res-i${i}.svg` alt='')
 							+e.item-text=t
 				+residance-i('1','Получить европейские (латвийские) водительские права уже через 183 дня в статусе ВНЖ ')
 				+residance-i('2','Приобрести автомобиль и без проблем его эксплуатировать в зоне Европейского Союза.')

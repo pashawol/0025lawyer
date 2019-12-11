@@ -29,7 +29,7 @@
 		font-family: $font-family-monospace;
 		color: #2e2c33;
 		line-height: 1.03;
-		letter-spacing: 2px;
+		letter-spacing: rem(2);
 		text-align: center;
 		margin-bottom: rem(52);
 	}
@@ -49,25 +49,28 @@
 		}
 	}
 
-	&__col{
+	&__item{
 		margin-bottom: rem(20);
 		@include media-breakpoint-up(lg){
 			margin-bottom: rem(30);
 		}
-	}
-
-	&__item{
 		padding: rem(10);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 100%;
 		min-height: rem(188);
 		border-radius: rem(10);
 		@include mt;
 		border: 1px solid #efefef;
 		background-color: #ffffff;
+		img{
+			@include mt;
+			filter: grayscale(100%);
+		}
 		&:hover{
+			img{
+				filter: none;
+			}
 			box-shadow: 0 3px 46px rgba(136, 136, 149, 0.09);
 		}
 	}

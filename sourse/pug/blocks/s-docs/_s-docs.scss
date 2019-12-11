@@ -60,15 +60,15 @@
 		color: #fff;
 		line-height: 1.53;
 		font-weight: 500;
-		letter-spacing: 0.54px;
+		letter-spacing: rem(0.54);
 	}
 
-	&__block-text{
+	p{
 		color: #2e2c33;
 		font-size: rem(19);
 		font-weight: 500;
 		line-height: 1.58;
-		letter-spacing: 0.7px;
+		letter-spacing: rem(0.7);
 		margin-bottom: rem(20);
 		@include media-breakpoint-up(md){
 			margin-bottom: rem(45);
@@ -80,7 +80,7 @@
 		justify-content: space-between;
 	}
 
-	&__list{
+	ul{
 		list-style: none;
 		margin-bottom: 0;
 		display: flex;
@@ -88,7 +88,7 @@
 		height: 100%;
 	}
 
-	&__list-item{
+	li{
 		padding-left: rem(30);
 		@include media-breakpoint-up(md){
 			padding-left: 0;
@@ -96,7 +96,7 @@
 		color: #2e2c33;
 		font-size: rem(19);
 		line-height: 1.44;
-		letter-spacing: 0.56px;
+		letter-spacing: rem(0.56);
 		flex-grow: 1;
 		margin-bottom: rem(20);
 		position: relative;

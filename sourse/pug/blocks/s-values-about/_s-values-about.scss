@@ -9,7 +9,7 @@
 		text-align: center;
 		@include rfs(58);
 		line-height: 1.11;
-		letter-spacing: 2.3px;
+		letter-spacing: rem(2.3);
 		color: #2e2c33;
 		font-family: $font-family-monospace;
 		margin-bottom: rem(25);
@@ -23,7 +23,7 @@
 		text-align: center;
 		font-weight: 500;
 		line-height: 1.33;
-		letter-spacing: 0.53px;
+		letter-spacing: rem(0.53);
 	}
 
 	&__row-wrap{
@@ -65,49 +65,45 @@
 		}
 	}
 
-	&__content-block{
+	h3{
+		padding-left: rem(20);
+		@include media-breakpoint-up(md){
+			padding-left: rem(35);
+		}
+		color: #2e2c33;
+		font-size: rem(22);
+		font-weight: 500;
+		line-height: 1.31;
+		letter-spacing: rem(0.62);
+		position: relative;
+		margin-bottom: rem(20);
+		&::before{
+			content: '';
+			width: rem(12);
+			height: rem(12);
+			border-radius: 50%;
+			position: absolute;
+			top: rem(7);
+			left: 0;
+			background-image: linear-gradient(-40deg, #d0d0d0 0%, #ffffff 100%);
+			background-color: #e8e8e8;
+		}
+	}
+
+	p{
+		padding-left: rem(30);
+		@include media-breakpoint-up(md){
+			padding-left: rem(51);
+		}
+		color: #2e2c33;
+		font-size: rem(19);
+		line-height: 1.32;
+		letter-spacing: rem(0.54);
 		&:not(:last-child){
-			margin-bottom: rem(37);
+			margin-bottom: rem(30);
 		}
-		h3{
-			padding-left: rem(20);
-			@include media-breakpoint-up(md){
-				padding-left: rem(35);
-			}
-			color: #2e2c33;
-			font-size: rem(22);
-			font-weight: 500;
-			line-height: 1.31;
-			letter-spacing: 0.62px;
-			position: relative;
-			margin-bottom: rem(20);
-			&::before{
-				content: '';
-				width: rem(12);
-				height: rem(12);
-				border-radius: 50%;
-				position: absolute;
-				top: rem(7);
-				left: 0;
-				background-image: linear-gradient(-40deg, #d0d0d0 0%, #ffffff 100%);
-				background-color: #e8e8e8;
-			}
-		}
-		p{
-			padding-left: rem(30);
-			@include media-breakpoint-up(md){
-				padding-left: rem(51);
-			}
-			color: #2e2c33;
-			font-size: rem(19);
-			line-height: 1.32;
-			letter-spacing: 0.54px;
-			&:not(:last-child){
-				margin-bottom: rem(30);
-			}
-			&:last-child{
-				margin-bottom: 0;
-			}
+		&:last-child{
+			margin-bottom: 0;
 		}
 	}
 		

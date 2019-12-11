@@ -12,7 +12,8 @@ mixin s-how-work()
 								+e.item-row.row
 									+e.icon-col.col-md
 										+e.icon-wrap
-											+icon(`how-i${i}`)
+											//- +icon(`how-i${i}`)
+											+e.IMG.icon(src=`img/svg/how-i${i}.svg` alt='')
 									.col-md
 										block
 					+how-i('1')

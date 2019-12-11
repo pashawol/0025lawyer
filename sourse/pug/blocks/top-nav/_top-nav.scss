@@ -120,7 +120,7 @@
 	&__title{
 		color: #2e2c33;
 		text-transform: uppercase;
-		letter-spacing: 1.08px;
+		letter-spacing: rem(1.08);
 		line-height: 1.37;
 		font-size: rem(14);
 		font-family: $font-family-monospace;
@@ -128,7 +128,7 @@
 	}
 
 	&__subtitle{
-		letter-spacing: 0.75px;
+		letter-spacing:	rem(0.75);
 		line-height: 1.31;
 		font-size: rem(16);
 		color: #acacac;
@@ -139,7 +139,7 @@
 		@include media-breakpoint-up(lg){
 			font-size: rem(19);
 		}
-		letter-spacing: 0.73px;
+		letter-spacing: rem(0.73);
 		line-height: 1.16;
 		font-weight: 500;
 		color: #a4a4a4;
@@ -153,7 +153,7 @@
 		}
 		display: block;
 		color: #2e2c33;
-		letter-spacing: 0.88px;
+		letter-spacing: rem(0.88);
 		line-height: 0.96;
 		&:hover{
 			color: #2e2c33;

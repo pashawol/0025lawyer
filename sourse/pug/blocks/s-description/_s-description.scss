@@ -25,7 +25,7 @@
 			text-transform: uppercase;
 			color: #cbcbcb;
 			opacity: 0.1;
-			letter-spacing: 4.06px;
+			letter-spacing: rem(4.06);
 			line-height: 0.85;
 			font-family: $font-family-monospace;
 			@include rfs(428);
@@ -42,7 +42,7 @@
 			page-break-inside: avoid;
 			break-inside: avoid;
 			line-height: 1.5;
-			letter-spacing: 0.75px;
+			letter-spacing: rem(0.75);
 			span{
 				font-weight: 500;
 			}

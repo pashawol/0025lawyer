@@ -18,7 +18,7 @@
 				line-height: 1;
 				color: #7f7f7f;
 				text-transform: uppercase;
-				letter-spacing: 0.53px;
+				letter-spacing: rem(0.53);
 				font-size: rem(23);
 			}
 		}
@@ -32,7 +32,7 @@
 		}
 		max-width: rem(650);
 		line-height: 1.03;
-		letter-spacing: 1.6px;
+		letter-spacing: rem(1.6);
 		color: #2e2c33;
 		text-align: center;
 		font-family: $font-family-monospace;
@@ -72,7 +72,7 @@
 			@include a-cent;
 			width: calc(100% - 8px);
 			height: calc(100% - 8px);
-			border-radius: 10px;
+			border-radius: rem(10);
 			border: 1px dashed #e8e8e8;
 		}
 		&--top{
@@ -86,7 +86,7 @@
 		@include rfs(94);
 		color: #7b7884;
 		line-height: 1;
-		letter-spacing: 3.36px;
+		letter-spacing: rem(3.36);
 		font-family: $font-family-monospace;
 		margin-bottom: rem(18);
 		&--dark{
@@ -98,16 +98,16 @@
 		text-transform: uppercase;
 		font-family: $font-family-monospace;
 		color: #7b7884;
-		font-size: 27px;
+		font-size: rem(27);
 		line-height: 1.27;
-		letter-spacing: 0.76px;
+		letter-spacing: rem(0.76);
 		margin-bottom: rem(30);
 	}
 
 	&__item-text{
 		color: #2e2c33;
 		font-size: rem(17);
-		letter-spacing: 0.48px;
+		letter-spacing: rem(0.48);
 		line-height: 1.35;
 	}
 

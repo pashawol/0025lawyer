@@ -20,7 +20,7 @@
 				line-height: 1;
 				color: #7f7f7f;
 				text-transform: uppercase;
-				letter-spacing: 0.53px;
+				letter-spacing: rem(0.53);
 				font-size: rem(23);
 			}
 		}
@@ -32,7 +32,7 @@
 		@include rfs(66);
 		margin-bottom: rem(32);
 		line-height: 1.09;
-		letter-spacing: 1.8px;
+		letter-spacing: rem(1.8);
 		span{
 			color: #d4c7b9;
 		}
@@ -59,22 +59,25 @@
 			color: #7b7b7b;
 			margin-bottom: rem(29);
 			line-height: 1.5;
-			letter-spacing: 0.57px;
+			letter-spacing: rem(0.57);
 		}
 	}
 
 	&__link{
+		margin-bottom: rem(50);
+		@include media-breakpoint-up(md){
+			margin-top: rem(20);
+			margin-bottom: rem(35);
+		}
 		display: inline-block;
 		padding-bottom: rem(10);
-		margin-top: rem(20);
-		margin-bottom: rem(35);
 		font-family: $font-family-monospace;
 		font-size: rem(21);
 		line-height: 1.17;
 		border-bottom: 1px dashed #2e2c33;
 		text-transform: uppercase;
 		color: #2e2c33;
-		letter-spacing: 0.63px;
+		letter-spacing: rem(0.63);
 		&:hover{
 			color: #2e2c33;
 			text-decoration: none;
@@ -94,7 +97,7 @@
 		position: relative;
 		z-index: 2;
 		border-radius: rem(10);
-		box-shadow: 0 3px 46px rgba(136, 136, 149, 0.09);
+		box-shadow: 0 3px rem(46) rgba(136, 136, 149, 0.09);
 		background-color: #ffffff;
 		&::after{
 			z-index: -1;
@@ -111,7 +114,7 @@
 		font-size: rem(18);
 		font-weight: 500;
 		color: #a4a4a4;
-		letter-spacing: 0.73px;
+		letter-spacing: rem(0.73);
 		line-height: 1.16;
 	}
 
@@ -119,7 +122,7 @@
 		display: block;
 		color: #2e2c33;
 		font-size: rem(22);
-		letter-spacing: 0.88px;
+		letter-spacing: rem(0.88);
 		margin-bottom: rem(26);
 		&:hover{
 			text-decoration: none;

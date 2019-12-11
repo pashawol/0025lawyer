@@ -18,7 +18,7 @@
 				line-height: 1;
 				color: #7f7f7f;
 				text-transform: uppercase;
-				letter-spacing: 0.53px;
+				letter-spacing: rem(0.53);
 				font-size: rem(23);
 			}
 		}
@@ -31,7 +31,7 @@
 		}
 		text-align: center;
 		font-family: $font-family-monospace;
-		letter-spacing: 1.9px;
+		letter-spacing: rem(1.9);
 	}
 
 	&__block{
@@ -42,7 +42,7 @@
 		@include media-breakpoint-up(lg){
 			padding: rem(57) rem(10) rem(65) rem(83);
 		}
-		border-radius: 10px;
+		border-radius: rem(10);
 		background-color: #f9f9f9;
 		&:not(:last-child){
 			margin-bottom: rem(30);
@@ -68,7 +68,7 @@
 		}
 		&--bottom{
 			border: 1px solid #f8f8f8;
-			border-radius: 10px;
+			border-radius: rem(10);
 			overflow: hidden;
 		}
 	}
@@ -82,7 +82,7 @@
 		font-style: italic;
 		@include rfs(60);
 		line-height: 1.2;
-		letter-spacing: 0.48px;
+		letter-spacing: rem(0.48);
 		font-family: $font-family-monospace;
 		&--bg{
 			@include rfs(56);
@@ -149,7 +149,7 @@
 			display: inline;
 			color: #2e2c33;
 			font-size: rem(21);
-			letter-spacing: 0.63px;
+			letter-spacing: rem(0.63);
 			line-height: 1.17;
 			border-bottom: 1px solid transparent;
 			&:hover{

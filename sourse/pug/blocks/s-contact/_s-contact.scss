@@ -19,7 +19,7 @@
 				line-height: 1;
 				color: #fff;
 				text-transform: uppercase;
-				letter-spacing: 0.53px;
+				letter-spacing: rem(0.53);
 				font-size: rem(23);
 			}
 		}
@@ -176,13 +176,13 @@
 		font-size: rem(16);
 		font-weight: 500;
 		line-height: 1.4;
-		letter-spacing: 0.6px;
+		letter-spacing: rem(0.6);
 	}
 
 	&__link{
 		color: #ffffff;
 		font-size: rem(24);
-		letter-spacing: 0.88px;
+		letter-spacing: rem(0.88);
 		&:hover{
 			color: #fff;
 			text-decoration: none;
